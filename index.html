@@ -1,0 +1,222 @@
+<!-- a comment -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="Viddiff, videos, differencing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video Action Differencing with Natural Language</title>
+
+  
+  <!-- Math -->
+  <script type="text/javascript"
+  src="static/js/LaTeXMathML.js">
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+ -->
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Video Action Differencing with Natural Language</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jmhb0.github.io/" style="color: #8C1515 !important;">James Burgess</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=iGA10XoAAAAJ" style="color: #8C1515 !important;">Xiaohan Wang</a>,</span>
+            <span class="author-block">
+              <a href="https://cs.stanford.edu/~yuhuiz/" style="color: #8C1515 !important;">Yuhui Zhang</a>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/anita-rau-0aa196124/" style="color: #8C1515 !important;">Anita Rau</a>,</span>
+            <span class="author-block">
+              <a href="https://www.lisabdunlap.com/" style="color: #003262 !important;">Lisa Dunlap</a>,</span>
+            <span class="author-block">
+              <a href="https://people.eecs.berkeley.edu/~trevor/" style="color: #003262 !important;">Trevor Darrell</a>,</span>
+            <span class="author-block">
+              <a href="https://ai.stanford.edu/~syyeung/" style="color: #8C1515 !important;">Serena Yeung-Levy</a>
+            </span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block" style="color:#8C1515">Stanford</span>
+            <span class="author-block" style="color:black">and</span>
+            <span class="author-block" style="color:#003262;">UC Berkeley  </span>
+            <br>
+          </div>
+
+          <!-- 
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Stanford and UC Berkeley</span>
+          </div> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (coming soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/jmhb0/viddiff"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h1 class="subtitle has-text-centered">
+      VidDiff: a new task that describes differences between two videos in natural language
+      </h1>
+      <img src="./static/images/viddiff_pullfig.png"
+                 class=""
+                 alt="Viddiff pull figure showing the task"/>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-4">
+        The VidDiff task and benchmark
+      </h2>
+      <!-- <img src="./static/images/viddiff_methods.png"
+                 class=""
+                 alt="VidDiff methods figure"/> -->
+      <p>
+        Here I describe the task and the benchmark
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-4">
+        Methods: the VidDiff Framework
+      </h2>
+      <img src="./static/images/viddiff_methods.png"
+                 class=""
+                 alt="VidDiff methods figure"/>
+      <p>
+        A user-supplied description of the action (e.g. "weighted squat") is used by the LLM <i>proposer</i> to generate possible differences in the action. The <i>frame localizer</i> assigns each of these differences a set of retrieval strings and the approximate number of frames needed to determine the action. Given two videos A and B, this information is used to localize the frames needed to evaluate if the difference exists between videos. Using these localized frames, the <i>action differencer</i> converts the difference description to a multiple choice question given to a VQA model to determine if this variation exists.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      (coming soon)
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+          The template for this page is borrowed from <a href="https://nerfies.github.io/">Nerfies</a>.  If you reuse their <a href="https://github.com/nerfies/nerfies.github.io">code</a>, please link to their site.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
