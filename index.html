@@ -133,7 +133,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/jmhb0/viddiff"
+                <a href="https://github.com/jmhb0/VidDiff"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -154,7 +154,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h1 class="subtitle has-text-centered">
-      VidDiff: a new task that describes differences between two videos in natural language
+      VidDiff: a new task for describing differences between two videos in natural language
       </h1>
       <img src="./static/images/viddiff_pullfig.png"
                  class=""
@@ -174,7 +174,10 @@
                  class=""
                  alt="VidDiff methods figure"/> -->
       <p>
-        Here I describe the task and the benchmark
+    Given two videos of the same action, the Video Action Differencing task involves generating two sets of natural language statements: one set that is more true for video A than video B, and another set that is more true for video B than video A. For example, the video pairs may feature an expert and a novice performing a barbell squat, with important differences being "knees caving in more in video A" and "the squat is deeper in video B".
+
+    Since this is a new task, we curate VidDiffBench which has 656 video pairs and 5,580 carefully annotated differences. We choose videos from diverse domains where learning skills require significant time investment and expert feedback, including fitness exercises, sports, music, and surgery.
+    <!-- insert more exmaples -->
       </p>
     </div>
   </div>
